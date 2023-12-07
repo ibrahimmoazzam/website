@@ -1,0 +1,702 @@
+@font-face {
+  font-family: "SF Pro";
+  src: url("../assets/SF-Pro.ttf");
+}
+
+* {
+  font-family: "SF Pro", sans-serif;
+  font-weight: 300;
+  color: black;
+  font-size: 16px;
+}
+
+.skip {
+  background: white;
+  color: black;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+  top: -60px;
+}
+
+.skip:focus {
+  top: 1%;
+}
+
+header {
+  display: flex;
+  background-color: #fcfbfe;
+  justify-content: space-between;
+  padding: 3.5% 5% 3.5% 5%;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+header p {
+  font-size: 20px;
+  line-height: 1.38;
+}
+
+header a {
+  text-decoration: none;
+  font-weight: 300;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+nav li {
+  line-height: 1.75;
+  margin-bottom: 15px;
+}
+
+nav a {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.mobile-links {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  transition: top 1s ease;
+  text-align: right;
+  padding: 3.5% 5% 3.5% 5%;
+}
+
+.mobile-links > * {
+  margin-bottom: 35px;
+}
+
+.links {
+  display: none;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.67;
+}
+
+b {
+  font-weight: 500;
+}
+
+a:link,
+a:visited {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover,
+a.active {
+  color: #ba0303;
+  text-decoration: none;
+}
+
+header a:link,
+header a:visited {
+  color: #000000;
+}
+
+header a:hover,
+header a.active {
+  color: #ba0303;
+}
+
+.purple {
+  color: #000000;
+  background-color: #b183ba;
+  font-weight: 500;
+}
+
+.grey {
+  color: #000000;
+  background-color: #d2d2d2;
+  font-weight: 500;
+}
+
+.yellow {
+  color: #000000;
+  background-color: #ceff1c;
+  font-weight: 500;
+}
+
+.shadow {
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinking {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: orange;
+  }
+}
+
+.typing_container {
+  display: inline-block;
+}
+
+div.subtitle,
+div.subtitle b {
+  font-weight: 300;
+  color: #808080;
+  font-size: 25px;
+  margin-top: 5px;
+}
+
+div.subtitle {
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  width: 0;
+  white-space: nowrap;
+  animation: typing 1s steps(30, end) forwards, blinking 1.06s infinite;
+}
+
+div.subtitle b {
+  font-weight: 500;
+}
+
+#languages {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#languages button {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 100px;
+  font-size: 15px;
+  line-height: 1em;
+  font-weight: 450;
+  margin: 5px;
+  padding: 15px 30px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 0px;
+}
+
+.buttons {
+  margin-bottom: 20px;
+}
+
+#languages .selected {
+  background-color: #00274c;
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.hand {
+  height: 80px;
+  width: 80px;
+  margin-top: 30px;
+}
+
+#purpose {
+  margin-top: 40px;
+  background-color: #f5f5f7;
+  padding: 5% 5% 5% 5%;
+}
+
+#purpose p {
+  background-color: #ffffff;
+  border-radius: 45px;
+  font-size: 20px;
+  line-height: 1.35;
+  text-align: center;
+  padding: 8% 10% 8% 10%;
+  font-weight: 300;
+}
+
+#pages {
+  padding: 5% 5% 5% 5%;
+}
+
+#pages div {
+  border-radius: 15px;
+  text-align: center;
+  padding: 10% 5% 10% 5%;
+}
+
+#pages div:hover {
+  transform: scale(1.05);
+}
+
+#pages div:first-child {
+  margin-bottom: 5%;
+}
+
+#pages div > * {
+  margin-bottom: 15px;
+}
+
+#pages p {
+  font-size: 20px;
+  line-height: 1.67;
+  font-weight: 300;
+}
+
+#pages a {
+  font-size: 18px;
+  font-weight: 300px;
+  text-decoration: none;
+}
+
+#pages div:first-child {
+  background-color: #fafafa;
+}
+
+#pages div:nth-child(2) {
+  background-color: #f5f5f7;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+@keyframes circulate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.rainbow {
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.rainbow::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: 50% 50%, 50% 50%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  background-image: linear-gradient(#ceff1c, #ceff1c),
+    linear-gradient(#b183ba, #b183ba), linear-gradient(#620674, #620674),
+    linear-gradient(#d2d2d2, #d2d2d2);
+  animation: circulate 6s linear infinite;
+}
+
+.rainbow::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 6px;
+  top: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  background: white;
+  border-radius: 5px;
+}
+
+#introduction {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#introduction p {
+  font-size: 17px;
+  line-height: 1.38;
+  font-weight: 400;
+  color: #666666;
+}
+
+#introduction + p {
+  padding: 2.5% 2.5% 0 2.5%;
+  font-weight: 300;
+}
+
+.countdown-timer {
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  background-color: #f2f1f5;
+}
+
+#projects > div {
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#projects > div h2 {
+  font-size: 30px;
+}
+
+#projects > div p {
+  font-size: 18px;
+  line-height: 1.38;
+  font-weight: 300;
+  padding: 0 10% 0 10%;
+}
+
+#projects > div a {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.38;
+  margin-bottom: 20px;
+}
+
+#dost {
+  background-color: #ffffff;
+}
+
+#ishaara {
+  background-color: #000000;
+}
+
+#ishaara a:link {
+  color: #3399ff;
+}
+
+#ishaara h2,
+#ishaara p {
+  color: #ffffff;
+}
+
+#fact-check,
+#diabetes-predictor {
+  background-color: #ffffff;
+  margin: 0.5% 0 0.5% 0;
+}
+
+#fact-check {
+  margin-top: 1%;
+  margin-bottom: 0.5%;
+}
+
+#diabetes-predictor {
+  margin-top: 0.5%;
+  margin-bottom: 1%;
+}
+
+.construction {
+  text-align: center;
+  display: block;
+  margin: auto;
+  padding: 0% 20%;
+}
+
+footer {
+  background-color: #f5f5f7;
+  padding: 3%;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icons i {
+  margin: 6px;
+  color: #000000;
+  opacity: 100%;
+}
+
+footer p {
+  font-weight: 200;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  div.subtitle,
+  div.subtitle b {
+    font-size: 28px;
+    margin-top: 8px;
+  }
+
+  h2 {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.25;
+  }
+
+  nav {
+    display: block;
+  }
+
+  #hamburger-open,
+  #hamburger-close {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    background-color: #fcfbfe;
+    justify-content: space-between;
+    padding: 1% 5% 1% 5%;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  header p {
+    font-size: 30px;
+    line-height: 1.38;
+  }
+
+  header a {
+    text-decoration: none;
+    font-weight: 300;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav li {
+    line-height: 1.75;
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+
+  nav a {
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  nav li:last-child {
+    margin-right: 0px;
+  }
+
+  .mobile-links {
+    display: none;
+  }
+
+  .links {
+    display: block;
+  }
+
+  #languages {
+    margin-top: 30px;
+  }
+
+  #languages button {
+    font-size: 20px;
+    line-height: 1.2em;
+    padding: 16px 62px;
+  }
+
+  #languages button:hover {
+    box-shadow: none;
+    background-color: #00274c;
+    color: #ffffff;
+  }
+
+  .buttons {
+    margin-bottom: 35px;
+  }
+
+  .hand {
+    height: 115px;
+    width: 115px;
+    margin-top: 40px;
+  }
+
+  #purpose {
+    margin-top: 50px;
+    padding: 3.5% 18% 3.5% 18%;
+  }
+
+  #purpose p {
+    font-size: 35px;
+    line-height: 1.35;
+    padding: 8% 10% 8% 10%;
+  }
+
+  #pages {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3.5% 18% 3.5% 18%;
+    column-gap: 25px;
+  }
+
+  #pages div {
+    padding: 20% 10% 20% 10%;
+    height: 100%;
+    width: 100%;
+  }
+
+  #pages div > * {
+    margin-bottom: 15px;
+  }
+
+  #pages p {
+    font-size: 25px;
+  }
+
+  #pages a {
+    font-size: 22px;
+  }
+
+  #pages div:nth-child(2) {
+    padding: 20% 7% 20% 7%;
+  }
+
+  #introduction {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  #introduction p {
+    font-size: 25px;
+  }
+
+  #projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #dost,
+  #ishaara,
+  #khushposh {
+    grid-column: 1 / span 2;
+  }
+
+  #projects > div {
+    padding-top: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #projects > div h2 {
+    font-size: 40px;
+  }
+
+  #projects > div p {
+    font-size: 25px;
+    line-height: 1.38;
+    font-weight: 300;
+    padding: 0 15% 0 15%;
+  }
+
+  #projects > div a {
+    display: block;
+    margin-top: 10px;
+    font-size: 22px;
+    line-height: 1.38;
+    margin-bottom: 30px;
+  }
+
+  #dost {
+    background-color: #ffffff;
+  }
+
+  #ishaara {
+    background-color: #000000;
+  }
+
+  #ishaara h2,
+  #ishaara p {
+    color: #ffffff;
+  }
+
+  #fact-check,
+  #diabetes-predictor {
+    background-color: #ffffff;
+    margin: 1% 0 1% 0;
+  }
+
+  #fact-check {
+    margin-left: 1%;
+    margin-right: 0.5%;
+  }
+
+  #diabetes-predictor {
+    margin-left: 0.5%;
+    margin-right: 1%;
+  }
+
+  .icons i {
+    margin: 12px;
+    opacity: 55%;
+  }
+
+  .icons i:hover {
+    opacity: 100%;
+    color: #f91e1e;
+  }
+
+  .construction {
+    padding: 0 35%;
+  }
+
+  footer p {
+    font-weight: 200;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .skip {
+    -webkit-transition: none;
+    transition: none;
+  }
+
+  div.subtitle {
+    animation: none;
+    width: 100%;
+    border-right: 0px;
+  }
+
+  .rainbow::before {
+    animation: none;
+  }
+}
