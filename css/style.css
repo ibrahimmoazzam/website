@@ -341,11 +341,8 @@ div.subtitle b {
 }
 
 #introduction + p {
-  padding: 2.5% 2.5% 0 2.5%;
+  padding: 2.5%;
   font-weight: 300;
-}
-
-.countdown-timer {
 }
 
 #projects {
@@ -418,6 +415,14 @@ div.subtitle b {
   display: block;
   margin: auto;
   padding: 0% 20%;
+}
+
+#infographic {
+  width: 90%;
+  display: block;
+  margin: auto;
+  border-radius: 35px;
+  margin-bottom: 2.5%;
 }
 
 footer {
